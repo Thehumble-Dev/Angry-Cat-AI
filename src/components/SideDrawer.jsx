@@ -1,4 +1,5 @@
 import {
+	Box,
 	Button,
 	Divider,
 	Drawer,
@@ -12,11 +13,12 @@ import {
 	Spacer,
 	Text,
 	VStack,
-	Link as ChakraLink,
 } from '@chakra-ui/react';
 import React from 'react';
 import { IoCloseSharp } from 'react-icons/io5';
 import { BsWallet } from 'react-icons/bs';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import WalletButton from './WalletButton';
 
 const SideDrawer = ({ isOpen, onClose, btnRef }) => {
 	return (
@@ -60,43 +62,53 @@ const SideDrawer = ({ isOpen, onClose, btnRef }) => {
 						width='100%'
 						spacing='8'
 					>
-						<Button
-							color='white'
-							fontWeight={500}
-							variant='link'
+						<a href='#home'>
+							<Button
+								color='white'
+								fontWeight={500}
+								variant='link'
+								onClick={onClose}
+							>
+								Home
+							</Button>
+						</a>
+						<a href='#buy'>
+							<Button
+								color='white'
+								fontWeight={500}
+								variant='link'
+								onClick={onClose}
+							>
+								HOW To BUY
+							</Button>
+						</a>
+						<a href='#dolanomics'>
+							<Button
+								color='white'
+								fontWeight={500}
+								variant='link'
+								onClick={onClose}
+							>
+								TOKENOMICS
+							</Button>
+						</a>
+						<a
+							href='#roadmap'
+							onClick={onClose}
 						>
-							Home
-						</Button>
-						<Button
-							color='white'
-							fontWeight={500}
-							variant='link'
-						>
-							HOW To BUY
-						</Button>
-						<Button
-							color='white'
-							fontWeight={500}
-							variant='link'
-						>
-							TOKENOMICS
-						</Button>
-						<Button
-							color='white'
-							fontWeight={500}
-							variant='link'
-						>
-							ROADMAP
-						</Button>
+							<Button
+								color='white'
+								fontWeight={500}
+								variant='link'
+							>
+								ROADMAP
+							</Button>
+						</a>
 					</VStack>
 				</DrawerBody>
 				<Divider />
 				<DrawerFooter justifyContent='center'>
-					<ChakraLink
-						target='_blank'
-						href=''
-					>
-						<Button
+					{/* <Button
 							leftIcon={<BsWallet size='22px' />}
 							variant='solid'
 							bgColor='brand.ternary'
@@ -106,8 +118,10 @@ const SideDrawer = ({ isOpen, onClose, btnRef }) => {
 							color='white'
 						>
 							<Text fontSize='18px'>Connect Wallet</Text>
-						</Button>
-					</ChakraLink>
+						</Button> */}
+					<Box>
+						<WalletButton />
+					</Box>
 				</DrawerFooter>
 			</DrawerContent>
 		</Drawer>
