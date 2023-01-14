@@ -1,6 +1,11 @@
 @font-face {
 	font-family: Dolan;
-	src: url(./assets/fonts/WickedMouse.otf) format('opentype');
+	src: url(./assets/fonts/Metropolis-Black.otf) format('opentype');
+}
+
+@font-face {
+	font-family: DolanBody;
+	src: url(./assets/fonts/Gotham Regular.otf) format('opentype');
 }
 
 html,
@@ -9,4 +14,30 @@ body {
 	padding: 0;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	overflow: overlay;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+	margin-right: 2;
+	background: transparent;
+
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-track:hover {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #212121;
+	border-radius: 15px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+	background: #000000
 }

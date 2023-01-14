@@ -9,7 +9,8 @@ import Dolanomics from './pages/Dolanomics';
 import Roadmap from './pages/Roadmap';
 import LastNav from './pages/LastNav';
 import '@rainbow-me/rainbowkit/styles.css';
-
+const width = window.innerWidth;
+const height = window.innerHeight;
 const App = () => {
 	return (
 		<Flex
@@ -19,16 +20,24 @@ const App = () => {
 		>
 			<TopBar />
 			<Container
-				maxW='container.xl'
-				py={['2', '12', '28']}
+				maxW={"100%"}
+				py={['2', '24', '24']}
 				id='home'
-			>
+				backgroundColor="brand.yellow"
+
+				px={['3','14']}			
+				>
 				<Home />
 			</Container>
-			<Box id='buy'>
+			<Box 
+			backgroundColor="brand.primary"
+			maxW={width}
+			py={['2', '12', '0']}
+			id='buy'>
+				
 				<HowToBuy />
 			</Box>
-			<Container
+			{/* <Container
 				maxW='container.xl'
 				py={['2', '12', '28']}
 				id='claim'
@@ -40,15 +49,16 @@ const App = () => {
 				id='dolanomics'
 			>
 				<Dolanomics />
-			</Box>
+			</Box> */}
 			<Container
-				maxW='container.xl'
-				py={['12', '28']}
+				backgroundColor="brand.yellow"
+				maxW={width}
+				py={['2', '12', '28']}
 				id='roadmap'
 			>
 				<Roadmap />
 			</Container>
-			<Box borderTop='6px solid black'>
+			<Box borderTop='6px solid black' bgColor="brand.primary">
 				<LastNav />
 			</Box>
 			<Footer />

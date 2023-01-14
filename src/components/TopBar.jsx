@@ -14,6 +14,10 @@ import { HiMenu } from 'react-icons/hi';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import WalletButton from './WalletButton';
 
+//#f7d408 : yellow
+//#4e109a : purple
+const width = window.innerWidth
+
 const TopBar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const btnRef = React.useRef();
@@ -25,16 +29,17 @@ const TopBar = () => {
 			py={['4', null, '6']}
 		>
 			<Flex
-				align='center'
-				justify='center'
+				align='left'
+				justify='left'
 			>
-				<HStack spacing='9'>
+				<HStack spacing="50">
 					<Image
 						src='logo.png'
-						h='auto'
+						h='70'
 					/>
+					<Spacer />
 					<HStack
-						spacing='8'
+						spacing='12'
 						display={{
 							base: 'none',
 							lg: 'initial',
@@ -45,8 +50,9 @@ const TopBar = () => {
 								color='white'
 								fontWeight={500}
 								variant='link'
+								
 							>
-								Home
+								HOME
 							</Button>
 						</a>
 						<a href='#buy'>
@@ -55,7 +61,7 @@ const TopBar = () => {
 								fontWeight={500}
 								variant='link'
 							>
-								HOW To BUY
+								HOW TO BUY
 							</Button>
 						</a>
 						<a href='#dolanomics'>
@@ -78,7 +84,7 @@ const TopBar = () => {
 						</a>
 					</HStack>
 				</HStack>
-				<Spacer />
+				
 				{/* <Button
 					display={{
 						base: 'none',
@@ -94,14 +100,15 @@ const TopBar = () => {
 				>
 					CONNECT WALLET
 				</Button> */}
-				<Box
+				{/* <Box
 					display={{
 						base: 'none',
 						lg: 'flex',
 					}}
 				>
 					<WalletButton />
-				</Box>
+				</Box> */}
+				<Spacer />
 				<IconButton
 					ref={btnRef}
 					onClick={onOpen}

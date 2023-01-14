@@ -5,10 +5,9 @@ const theme = {
 	primary: '#000',
 	secondary: '#000',
 	interactive: '#F9FAFB',
-	container: '#fff',
+	container: '#f7d408',
 	module: '#F9FAFB',
 	accent: '#4772F5',
-	outline: '#4772F5',
 	dialog: '#FFF',
 	borderRadius: 2,
 };
@@ -41,7 +40,7 @@ const SwapWidgetPanel = () => {
 		<div
 			className='Uniswap'
 			style={{
-				border: '1px solid black',
+				border: '6px solid black',
 				borderRadius: 20,
 			}}
 		>

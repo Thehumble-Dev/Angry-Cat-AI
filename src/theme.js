@@ -12,9 +12,10 @@ const fonts = {
 
 const colors = {
 	brand: {
-		primary: '#1B2E72',
+		primary: '#2e1500',
 		secondary: '#4772F5',
 		ternary: '#FFB50C',
+		yellow: "#f7d408"
 	},
 };
 

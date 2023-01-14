@@ -30,30 +30,34 @@ const LastNav = () => {
 			>
 				<HStack spacing='10'>
 					<Image
-						src='foot.svg'
+						src='logo.png'
 						alt='dolan'
+						height="200"
 					/>
 					<VStack align='flex-start'>
 						<a href='#home'>
 							<Button
 								fontWeight={500}
 								variant='link'
+								color={"#fff"}
 							>
-								Home
+								HOME
 							</Button>
 						</a>
 						<a href='#buy'>
 							<Button
 								fontWeight={500}
 								variant='link'
+								color={"#fff"}
 							>
-								HOW To BUY
+								HOW TO BUY
 							</Button>
 						</a>
 						<a href='#dolanomics'>
 							<Button
 								fontWeight={500}
 								variant='link'
+								color={"#fff"}
 							>
 								TOKENOMICS
 							</Button>
@@ -62,6 +66,7 @@ const LastNav = () => {
 							<Button
 								fontWeight={500}
 								variant='link'
+								color={"#fff"}
 							>
 								ROADMAP
 							</Button>
@@ -77,7 +82,7 @@ const LastNav = () => {
 					align='center'
 				>
 					<a
-						href='https://t.me/dolantoken'
+						href='https://t.me/angrycatai'
 						target='_blank'
 						rel='noreferrer'
 					>
@@ -92,7 +97,7 @@ const LastNav = () => {
 						</Button>
 					</a>
 					<a
-						href='https://twitter.com/dolan_token'
+						href=' https://twitter.com/AngryCatAI'
 						target='_blank'
 						rel='noreferrer'
 					>
@@ -117,7 +122,26 @@ const LastNav = () => {
 					>
 						CONNECT WALLET
 					</Button> */}
-					<WalletButton/>
+
+					<a
+						href='https://medium.com/@AngryCatAI/a-memecoin-for-the-ai-meta-2e3fcb4df785'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<Button
+							border='1px solid black'
+							py={2}
+							px={12}
+							fontWeight={400}
+							bgColor='#fff'
+							color="#000"
+							_hover={{ color: "#fff", bgColor: "#000" }}
+						>
+							MEDIUM
+						</Button>
+					</a>
+
+
 				</Flex>
 			</Flex>
 		</Container>

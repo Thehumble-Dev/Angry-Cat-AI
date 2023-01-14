@@ -17,10 +17,7 @@ const content = {
 		'Verified Socials',
 	],
 	3: [
-		'NFT Sneak Peak',
-		'Minting dAPP',
-		'NFT and token Usecase',
-		'Youtube marketing',
+		"TBA",
 	],
 };
 
@@ -29,7 +26,7 @@ const Roadmap = () => {
 		<VStack>
 			<Text
 				fontSize='5xl'
-				color='brand.secondary'
+				color='#fff'
 			>
 				Roadmap
 			</Text>
@@ -37,7 +34,7 @@ const Roadmap = () => {
 				pt='10'
 				columns={[1, 1, 2]}
 				spacing={0}
-				color='brand.secondary'
+				color='#fff'
 			>
 				<VStack
 					align='end'
@@ -61,11 +58,12 @@ const Roadmap = () => {
 				<Box position='relative'>
 					<Image
 						display={['none', 'none', 'flex']}
-						src='roadright.svg'
+						src='cat2.png'
 						position='absolute'
 						top={0}
 						bottom={0}
 						right={0}
+						height="300"
 					/>
 				</Box>
 				<Box
@@ -75,11 +73,12 @@ const Roadmap = () => {
 					position='relative'
 				>
 					<Image
-						src='roadleft.svg'
+						src='cat.png'
 						position={['relative', 'relative', 'absolute']}
 						top={0}
 						bottom={0}
 						left={0}
+						height="300"
 					/>
 				</Box>
 				<VStack
@@ -113,7 +112,8 @@ const Roadmap = () => {
 					{content[3].map((item, index) => (
 						<Text
 							align='right'
-							fontSize='2xl'
+							fontSize='3xl'
+							marginRight={40}
 							key={index}
 						>
 							{item}

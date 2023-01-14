@@ -4,14 +4,15 @@ import { FaRegCopyright } from 'react-icons/fa';
 
 const Footer = () => {
 	return (
-		<Center p={2}>
+		<Center p={2} bgColor="brand.primary">
 			<FaRegCopyright
 				style={{
 					display: 'inline-block',
 					fontSize: 22,
+					color:"#fff"
 				}}
 			/>{' '}
-			<Text align='center'>2022 DOLAN</Text>
+			<Text align='center' color="#fff">2022 Angry Cat AI</Text>
 		</Center>
 	);
 };

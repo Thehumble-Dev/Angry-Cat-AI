@@ -69,7 +69,7 @@ const SideDrawer = ({ isOpen, onClose, btnRef }) => {
 								variant='link'
 								onClick={onClose}
 							>
-								Home
+								HOME
 							</Button>
 						</a>
 						<a href='#buy'>
@@ -79,7 +79,7 @@ const SideDrawer = ({ isOpen, onClose, btnRef }) => {
 								variant='link'
 								onClick={onClose}
 							>
-								HOW To BUY
+								HOW TO BUY
 							</Button>
 						</a>
 						<a href='#dolanomics'>
