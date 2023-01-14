@@ -4,9 +4,7 @@ import TopBar from './components/TopBar';
 import React from 'react';
 import Home from './pages/Home';
 import HowToBuy from './pages/HowToBuy';
-import Claim from './pages/Claim';
-import Dolanomics from './pages/Dolanomics';
-import Roadmap from './pages/Roadmap';
+import Tokenomics from './pages/Tokenomics';
 import LastNav from './pages/LastNav';
 import '@rainbow-me/rainbowkit/styles.css';
 const width = window.innerWidth;
@@ -25,16 +23,16 @@ const App = () => {
 				id='home'
 				backgroundColor="brand.yellow"
 
-				px={['3','14']}			
-				>
+				px={['3', '14']}
+			>
 				<Home />
 			</Container>
-			<Box 
-			backgroundColor="brand.primary"
-			maxW={width}
-			py={['2', '12', '0']}
-			id='buy'>
-				
+			<Box
+				backgroundColor="brand.primary"
+				maxW={width}
+				py={['2', '12', '0']}
+				id='buy'>
+
 				<HowToBuy />
 			</Box>
 			{/* <Container
@@ -54,9 +52,9 @@ const App = () => {
 				backgroundColor="brand.yellow"
 				maxW={width}
 				py={['2', '12', '28']}
-				id='roadmap'
+				id='tokenomics'
 			>
-				<Roadmap />
+				<Tokenomics />
 			</Container>
 			<Box borderTop='6px solid black' bgColor="brand.primary">
 				<LastNav />

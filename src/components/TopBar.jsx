@@ -50,7 +50,7 @@ const TopBar = () => {
 								color='white'
 								fontWeight={500}
 								variant='link'
-								
+
 							>
 								HOME
 							</Button>
@@ -64,7 +64,7 @@ const TopBar = () => {
 								HOW TO BUY
 							</Button>
 						</a>
-						<a href='#dolanomics'>
+						<a href='#tokenomics'>
 							<Button
 								color='white'
 								fontWeight={500}
@@ -73,18 +73,10 @@ const TopBar = () => {
 								TOKENOMICS
 							</Button>
 						</a>
-						<a href='#roadmap'>
-							<Button
-								color='white'
-								fontWeight={500}
-								variant='link'
-							>
-								ROADMAP
-							</Button>
-						</a>
+
 					</HStack>
 				</HStack>
-				
+
 				{/* <Button
 					display={{
 						base: 'none',

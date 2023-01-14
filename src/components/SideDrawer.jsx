@@ -82,7 +82,7 @@ const SideDrawer = ({ isOpen, onClose, btnRef }) => {
 								HOW TO BUY
 							</Button>
 						</a>
-						<a href='#dolanomics'>
+						<a href='#tokenomics'>
 							<Button
 								color='white'
 								fontWeight={500}
@@ -90,18 +90,6 @@ const SideDrawer = ({ isOpen, onClose, btnRef }) => {
 								onClick={onClose}
 							>
 								TOKENOMICS
-							</Button>
-						</a>
-						<a
-							href='#roadmap'
-							onClick={onClose}
-						>
-							<Button
-								color='white'
-								fontWeight={500}
-								variant='link'
-							>
-								ROADMAP
 							</Button>
 						</a>
 					</VStack>

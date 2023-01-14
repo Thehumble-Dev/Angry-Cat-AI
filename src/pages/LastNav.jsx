@@ -53,7 +53,7 @@ const LastNav = () => {
 								HOW TO BUY
 							</Button>
 						</a>
-						<a href='#dolanomics'>
+						<a href='#tokenomics'>
 							<Button
 								fontWeight={500}
 								variant='link'
@@ -62,15 +62,7 @@ const LastNav = () => {
 								TOKENOMICS
 							</Button>
 						</a>
-						<a href='#roadmap'>
-							<Button
-								fontWeight={500}
-								variant='link'
-								color={"#fff"}
-							>
-								ROADMAP
-							</Button>
-						</a>
+
 					</VStack>
 				</HStack>
 				<Flex
