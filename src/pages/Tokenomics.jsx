@@ -1,5 +1,5 @@
 import { Box, Flex, HStack, Image, SimpleGrid, Text, VStack } from '@chakra-ui/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // text to be inserted:
 // Total supply: 1,000,000,000
 
@@ -12,7 +12,21 @@ import React from 'react';
 // Taxes:
 // 5% (4% for marketing/development & 1% for liquidity)
 
+
 const Tokenomics = () => {
+	const [windowSize, setWindowSize] = useState({
+		width: window.innerWidth,
+		height: window.innerHeight,
+	});
+	useEffect(() => {
+		window.onresize = () => {
+			setWindowSize({
+				width: window.innerWidth,
+				height: window.innerHeight,
+			});
+		};
+	}, []);
+
 	return (
 		<Flex flexDirection={"column"}>
 			<Box
@@ -21,12 +35,12 @@ const Tokenomics = () => {
 				text
 				fontSize='60'
 				align='center'
-				marginBottom=""
+
 
 			>
 				<Text>Tokenomics</Text>
 			</Box>
-			<HStack justifyContent={"space-evenly"}>
+			<HStack justifyContent={"space-evenly"} flexDirection={windowSize.width < 760 ? "column" : "row"}>
 				<Image src="cat2.png" width="400px"></Image>
 				<Flex flexDirection={"column"} textAlign={"center"} justifyContent="center" alignItems={"center"}>
 					<Box fontSize="35" fontFamily="DolanBody" color="#000" textAlign={"center"} marginBottom="10" >
@@ -46,7 +60,7 @@ const Tokenomics = () => {
 
 			</HStack>
 			<Box height={"100px"} borderTopWidth="5px" width="80%" borderColor={"brand.primary"} marginTop="100" marginLeft={"10vw"}></Box>
-			<HStack justifyContent={"space-evenly"}>
+			<HStack justifyContent={"space-evenly"} flexDirection={windowSize.width < 760 ? "column" : "row"}>
 				<Flex flexDirection={"column"} textAlign={"center"} justifyContent="center" alignItems={"center"}>
 					<Box fontSize="35" fontFamily="DolanBody" color="#000" textAlign={"center"} marginBottom="10" >
 						<Text><li>Allocation:</li></Text>
